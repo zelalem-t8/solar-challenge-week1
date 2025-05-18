@@ -7,10 +7,10 @@ import numpy as np
 # Load data
 @st.cache_data
 def load_data():
-    countries = ['sierraleone', 'togo']
+    countries = ['sierraleone', 'togo','benin']
     dfs = []
     for country in countries:
-        df = pd.read_csv(f'C:/Users/hp/Desktop/10 academy/solar-challenge-week1/data/{country}_clean.csv')
+        df = pd.read_csv(f'./data/{country}_clean.csv')
         df['Country'] = country.capitalize()
         # Convert Timestamp column to datetime
         if 'Timestamp' in df.columns:
