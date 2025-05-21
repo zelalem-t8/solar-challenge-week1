@@ -1,3 +1,6 @@
 missingno
 windrose
 streamlit
+scikit-learn
+xgboost
+torch
